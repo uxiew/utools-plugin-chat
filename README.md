@@ -5,6 +5,7 @@ A Utools plugin for ChatGPT and Bing AI; also collects some resources related to
 
 code from[Chanzhaoyu/chatgpt-web](https://github.com/chanzhaoyu/chatgpt-web.git)
 
+![演示](。/../demo/chat-config-set.png)
 ![演示](。/../demo/chat.png)
 
 # 功能

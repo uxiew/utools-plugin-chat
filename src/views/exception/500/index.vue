@@ -28,7 +28,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="flex h-full" style="background-color: #393a35">
+  <div class="chat-config flex h-full" style="background-color: #393a35">
     <div class="px-4 mx-auto" style="max-width: 580px">
       <img class="mx-auto" :src="logo" alt="" />
       <header class="space-y-10">
@@ -138,12 +138,14 @@ onMounted(() => {
   </div>
 </template>
 
-<style scoped lang="scss">
-span {
-  color: rgb(139, 181, 188);
+<style lang="scss">
+.chat-config {
+  span {
+    color: rgb(139, 181, 188);
 
-  .n-button.n-button--primary-type & {
-    color: white;
+    &.n-button__content {
+      color: white;
+    }
   }
 }
 </style>

@@ -1,6 +1,6 @@
 {
-  "name": "chatgpt",
-  "pluginName": "chatgpt",
+  "name": "chat",
+  "pluginName": "chat",
   "author": "ChandlerVer5",
   "homepage": "https://www.kancloud.cn/@chandler",
   "description": "chatgpt😄",
@@ -14,8 +14,18 @@
   "features": [
     {
       "code": "chat",
-      "explain": "chatgpt聊天、智能分析",
+      "explain": "chat AI聊天、智能分析",
       "cmds": ["chat"]
+    },
+    {
+      "code": "gpt",
+      "explain": "chatgpt聊天、智能分析",
+      "cmds": ["gpt"]
+    },
+    {
+      "code": "bing",
+      "explain": "bing聊天、智能分析",
+      "cmds": ["bing"]
     }
   ]
 }
