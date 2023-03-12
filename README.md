@@ -35,7 +35,7 @@ code from[Chanzhaoyu/chatgpt-web](https://github.com/chanzhaoyu/chatgpt-web.git)
 [x] 错误信息，前端显示
 [x] 所有数据存储在utools本地
 [x] 接入 Bing AI
-[x] 同步所有数据
+[x] 或者提供个人接口，以同步所有数据？？
 
 # 第三方在线
 
