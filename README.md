@@ -1,6 +1,7 @@
 # utools-chat
 
 A Utools plugin for ChatGPT and Bing AI; also collects some resources related to ChatGPT or AI.
+
 一个 chatgpt、bing AI 的 utools 插件;顺便收集了一些 chatgpt、AI 相关资源
 
 code from[Chanzhaoyu/chatgpt-web](https://github.com/chanzhaoyu/chatgpt-web.git)
