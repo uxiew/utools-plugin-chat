@@ -1,0 +1,21 @@
+{
+  "name": "chatgpt",
+  "pluginName": "chatgpt",
+  "author": "ChandlerVer5",
+  "homepage": "https://www.kancloud.cn/@chandler",
+  "description": "chatgpt😄",
+  "version": "1.0.0",
+  "logo": "logo.png",
+  "main": "index.html",
+  "preload": "./preload/index.ts",
+  "pluginSetting": {
+    "single": true
+  },
+  "features": [
+    {
+      "code": "chat",
+      "explain": "chatgpt聊天、智能分析",
+      "cmds": ["chat"]
+    }
+  ]
+}
