@@ -33,11 +33,10 @@ export default defineConfig((env) => {
             return this.toString()
           },
         },
-        // buildUpx: false,
-        buildUpx: {
-          outDir: 'upx',
-          outName: '[pluginName]_[version].upx',
-        },
+        buildUpx: false,
+        // buildUpx: {
+        //   outName: '[pluginName]_[version].upx',
+        // },
       }),
       viteStaticCopy({
         targets: [
