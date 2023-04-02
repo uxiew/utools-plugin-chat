@@ -2,7 +2,7 @@ import path from 'node:path'
 import { defineConfig, loadEnv } from 'vite'
 import vue from '@vitejs/plugin-vue'
 // @ts-ignore
-import utools from '../vite-plugin-utools-v5/dist/index.mjs';
+import utools from '@ver5/vite-plugin-utools';
 import { viteStaticCopy } from 'vite-plugin-static-copy'
 
 export default defineConfig((env) => {

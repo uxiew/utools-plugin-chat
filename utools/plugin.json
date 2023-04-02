@@ -15,17 +15,28 @@
     {
       "code": "chat",
       "explain": "chat AI聊天、智能分析",
-      "cmds": ["chat"]
+      "cmds": [
+        "chat",
+        {
+          "type": "over",
+          "minLength": 5,
+          "label": "问下智能AI吧"
+        }
+      ]
     },
     {
       "code": "gpt",
       "explain": "chatgpt聊天、智能分析",
-      "cmds": ["gpt"]
+      "cmds": [
+        "gpt"
+      ]
     },
     {
       "code": "bing",
       "explain": "bing聊天、智能分析",
-      "cmds": ["bing"]
+      "cmds": [
+        "bing"
+      ]
     }
   ]
 }

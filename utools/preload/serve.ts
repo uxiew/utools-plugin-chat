@@ -37,35 +37,13 @@ const ErrorCodeMessage: Record<string, string> = {
   500: '[OpenAI] 服务器繁忙，请稍后再试 | Internal Server Error',
 }
 
-export async function chatReply(
-  message: string,
-  lastContext?: { conversationId?: string; parentMessageId?: string },
-) {
-  if (!message)
-    return sendResponse({ type: 'Fail', message: 'Message is empty' })
-
-  try {
-    let options: SendMessageOptions = { timeoutMs: retrieve().TIMEOUT * 1000 }
-
-    if (lastContext)
-      options = { ...lastContext }
-
-    const response = await GPTAPI.sendMessage(message, { ...options })
-
-    return sendResponse({ type: 'Success', data: response })
-  }
-  catch (error: any) {
-    return sendResponse({ type: 'Fail', message: error.message })
-  }
-}
-
 export async function chatReplyProcess(
   message: string,
   lastContext?: { conversationId?: string; parentMessageId?: string },
   process?: (chat: ChatMessage) => void,
 ) {
-  if (!message)
-    return sendResponse({ type: 'Fail', message: 'Message is empty' })
+  // if (!message)
+  //   return sendResponse({ type: 'Fail', message: 'Message is empty' })
 
   try {
     let options: SendMessageOptions = { timeoutMs: retrieve().TIMEOUT * 1000 }

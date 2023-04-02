@@ -25,6 +25,13 @@ const SOCKS_PROXY_HOST = ''
 // # Socks Proxy Port
 const SOCKS_PROXY_PORT = ''
 
+// # # HTTPS 代理，可选，支持 http，https，socks5
+const HTTPS_PROXY = ''
+
+// 感觉与 HTTPS_PROXY 重复了，所以去掉
+// ALL_PROXY 支持 http，https, socks5，可选
+// const ALL_PROXY = ''
+
 
 // ========== add by chandlerver5 =====
 // * ID of the model to use. Currently, only `gpt-3.5-turbo` and `gpt-3.5-turbo-0301` are supported.

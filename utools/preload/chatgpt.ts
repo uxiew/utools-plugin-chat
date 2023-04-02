@@ -13,7 +13,7 @@ let GPTAPI: ChatGPTAPI | ChatGPTUnofficialProxyAPI
 initServer()
 
 function initServer() {
-  const { OPENAI, SOCKS_PROXY_HOST, SOCKS_PROXY_PORT } = retrieve() || {}
+  const { OPENAI, SOCKS_PROXY_HOST, SOCKS_PROXY_PORT, HTTPS_PROXY } = retrieve() || {}
   if (!OPENAI) return db_init()
   if (!OPENAI.API_KEY && !OPENAI.ACCESS_TOKEN) return
 
@@ -57,6 +57,11 @@ function initServer() {
       debug: DEBUG,
     }
 
+    if (OPENAI.API_MODEL && typeof OPENAI.API_MODEL === 'string')
+        options.model = OPENAI.API_MODEL
+
+
+
     if (SOCKS_PROXY_HOST && SOCKS_PROXY_PORT) {
       const agent = new SocksProxyAgent({
         hostname: SOCKS_PROXY_HOST,
@@ -64,6 +69,13 @@ function initServer() {
       })
       options.fetch = (url, options) => {
         // @ts-ignore
+        return fetch(url, { agent, ...options })
+      }
+    }
+
+    if (HTTPS_PROXY) {
+      const agent = new HttpsProxyAgent(httpsProxy)
+      options.fetch = (url, options) => {
         return fetch(url, { agent, ...options })
       }
     }

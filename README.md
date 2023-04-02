@@ -32,7 +32,7 @@ this project derived from [Chanzhaoyu/chatgpt-web](https://github.com/chanzhaoyu
 
 # TODO
 
-[x] 错误信息，前端显示
-[x] 所有数据存储在 utools 本地
-[x] 接入 Bing AI
-[x] 或者提供个人接口，以同步所有数据？？
+- [ ] 错误信息，前端显示
+- [ ] 所有数据存储在 utools 本地
+- [ ] 接入 Bing AI
+- [ ] 或者提供个人接口，以同步所有数据？？
